@@ -1,10 +1,11 @@
 # Plot raw data
 
 ```
-cat VoltageDividerSineCosCoils.csv  | grep "^1329079" | tr ";" " " | awk '{print $4}' | python ~/sources/ecmccomgui/pyDataManip/plotData.py ```
+cat VoltageDividerSineCosCoils.csv  | grep "^1329079" | tr ";" " " | awk '{print $4}' | python ~/sources/ecmccomgui/pyDataManip/plotData.py 
+```
 
 error:
-cat VoltageDividerSineCosCoils.csv  | grep "^1329079" | tr ";" " " | awk '{print $2-$4}' | tee error_pos.log 
+cat VoltageDividerSineCosCoils.csv  | grep "^1329079" | tr ";" " " | awk '{print $4-$2}' | tee error_pos.log 
 
 X-axis:
 cat VoltageDividerSineCosCoils.csv  | grep "^1329079" | tr ";" " " | awk '{print $2}' | tee pos.log 
