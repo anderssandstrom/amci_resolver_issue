@@ -22,7 +22,7 @@ cat ResolverCiclicError2.csv  | grep "^13290008" | tr ";" " " | awk '{print $4}'
 ```
 
 error:
-cat ResolverCiclicError2.csv  | grep "^13290008" | tr ";" " " | awk '{print $2-$4}' | tee error_pos.log 
+cat ResolverCiclicError2.csv  | grep "^13290008" | tr ";" " " | awk '{print $4-$2}' | tee error_pos.log 
 
 X-axis:
 cat ResolverCiclicError2.csv  | grep "^13290008" | tr ";" " " | awk '{print $2}' | tee pos.log 
