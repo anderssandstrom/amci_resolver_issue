@@ -53,3 +53,6 @@ cat ResolverCiclicError2.csv  | tail -n 1563 | grep "^13290008" | tr ";" " " | a
 
 ## plot
 cat error_pos_fwd.log pos_fwd.log error_pos_bwd.log pos_bwd.log | python ../../plotError.py
+
+## Overview
+python  ../../plotOverview.py pos.log resolver_pos.log 

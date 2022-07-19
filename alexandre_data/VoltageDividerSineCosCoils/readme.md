@@ -34,3 +34,7 @@ cat VoltageDividerSineCosCoils.csv  | tail -n 1500 | grep "^1329079" | tr ";" " 
 
 ## plot
 cat error_pos_fwd.log pos_fwd.log error_pos_bwd.log pos_bwd.log | python ../../plotError.py
+
+## Overview
+python  ../../plotOverview.py pos.log resolver_pos.log 
+
